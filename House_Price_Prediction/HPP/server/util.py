@@ -33,7 +33,7 @@ def load_saved_artifacts():
 
     with open("./artifacts/columns.json","r") as f:
         __data_columns= json.load(f)["data_columns"]
-        __loactions = __data_columns[3:]
+        __loactions = __data_columns[4:]
 
     global __model
     with open("./artifacts/House_price_prediction.pickle","rb") as f:
