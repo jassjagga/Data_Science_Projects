@@ -31,8 +31,8 @@ ssh -i "C:\Users\Viral\.ssh\Banglore.pem" ubuntu@ec2-3-133-88-210.us-east-2.comp
     ```
     server {
 	    listen 80;
-            server_name bhp;
-            root /home/ubuntu/BangloreHomePrices/client;
+            server_name HPP;
+            root /home/ubuntu/HPP/client;
             index app.html;
             location /api/ {
                  rewrite ^/api(.*) $1 break;
