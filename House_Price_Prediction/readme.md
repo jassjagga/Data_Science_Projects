@@ -42,7 +42,7 @@ ssh -i "C:\Users\Viral\.ssh\Banglore.pem" ubuntu@ec2-3-133-88-210.us-east-2.comp
     ```
     2. Create symlink for this file in /etc/nginx/sites-enabled by running this command,
     ```
-    sudo ln -v -s /etc/nginx/sites-available/bhp.conf
+    sudo ln -v -s /etc/nginx/sites-available/bhp.conf /etc/nginx/sites-enabled
     ```
     3. Remove symlink for default file in /etc/nginx/sites-enabled directory,
     ```
