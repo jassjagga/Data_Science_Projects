@@ -60,6 +60,3 @@ python3 /home/ubuntu/BangloreHomePrices/client/server.py
 ```
 Running last command above will prompt that server is running on port 5000.
 8. Now just load your cloud url in browser (for me it was <Domin Name "example "ec2-ed2-32-2-amazon.com">) and this will be fully functional website running in production cloud environment
-
-
-
