@@ -1,5 +1,8 @@
 Credit to : - Codebasics (Dhaval Patel)
 
+![website](https://user-images.githubusercontent.com/51167676/185267748-facf6c12-9066-431d-83a5-d58cd4829018.png)
+
+
 # Deploy this app to cloud (AWS EC2)
 
 1. Create EC2 instance using amazon console, also in security group add a rule to allow HTTP incoming traffic
