@@ -3,4 +3,6 @@
 
 2.Second Project :- Linear Regression Based House Price Prediction and aws website model deployment.
 
-3.Thirt Project :- Image Classification Project and model deployment on aws and a website. Collecting data
+3.Thirt Project :- Image Classification Project and model deployment on aws and a website. 
+
+Collecting data
