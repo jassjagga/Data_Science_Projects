@@ -6,3 +6,4 @@
 3.Thirt Project :- Image Classification Project and model deployment on aws and a website. 
 
 Collecting data.
+..
