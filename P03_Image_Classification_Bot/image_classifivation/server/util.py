@@ -1,6 +1,4 @@
 import base64
-
-
 import joblib
 import json
 import numpy as np
@@ -23,7 +21,7 @@ def classify_image(image_base64_data,file_path=None):
         scalled_img_har=cv2.resize(img_har,(32,32))
         combined_img=np.vstack((scalled_raw_img.reshape(32*32*3,1),scalled_img_har.reshape(32*32,1)))
 
-        len_image_array=32*32*3+32+32
+        len_image_array=32*32*3+32*32
         final=combined_img.reshape(1,len_image_array).astype(float)
 
         result.append(__model.predict(final)[0])
@@ -62,6 +60,8 @@ def get_cropped_image_if_2_eyes(image_path,image_base64_data):
     if img is not None:
         gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
         faces=face_cascade.detectMultiScale(gray,1.3,5)
+
+        cropped_faces=[]
         for (x,y,w,h) in faces:
             roi_gray=gray[y:y+h,x:x+w]
             roi_color=img[y:y+h,x:x+w]
