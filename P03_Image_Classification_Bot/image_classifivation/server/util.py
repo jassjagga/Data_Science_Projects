@@ -5,19 +5,19 @@ import numpy as np
 import cv2
 from wavelet import w2d
 
-__class_name_to_number ={}
-__class_name_to_number ={}
+__class_name_to_number = {}
+__class_name_to_number = {}
 
 __model = None
 
 def classify_image(image_base64_data,file_path=None):
-    imgs = get_cropped_image_if_2_eyes(file_path,image_base64_data)
+    imgs = get_cropped_image_if_2_eyes(file_path, image_base64_data)
 
-    result =[]
+    result = []
 
     for img in imgs:
-        scalled_raw_img =cv2.resize(img,(32,32))
-        img_har=w2d(img,"db1",5)
+        scalled_raw_img = cv2.resize(img,(32,32))
+        img_har = w2d(img, "db1" ,5)
         scalled_img_har=cv2.resize(img_har,(32,32))
         combined_img=np.vstack((scalled_raw_img.reshape(32*32*3,1),scalled_img_har.reshape(32*32,1)))
 
