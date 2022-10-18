@@ -7,7 +7,7 @@ def w2d(img, mode="haar", level=1):
     imArray = img
     # datatype conversions
     # convert to grayscale
-    imArray = cv2.cvtColor(imArray, cv2.COLOR_RGB2GRAY)
+    imArray = cv2.cvtColor(imArray, cv2.COLOR_BGR2GRAY)
     # CONVERT TO FLOT
     imArray = np.float32(imArray)
     imArray /= 255;

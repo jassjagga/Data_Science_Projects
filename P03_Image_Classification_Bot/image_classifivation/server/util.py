@@ -3,7 +3,7 @@ import joblib
 import json
 import numpy as np
 import cv2
-from wavelet import w2d
+
 
 __class_name_to_number = {}
 __class_name_to_number = {}
@@ -21,7 +21,7 @@ def classify_image(image_base64_data,file_path=None):
         scalled_img_har=cv2.resize(img_har,(32,32))
         combined_img=np.vstack((scalled_raw_img.reshape(32*32*3,1),scalled_img_har.reshape(32*32,1)))
 
-        len_image_array=32*32*3+32*32
+        len_image_array=32*32*3 + 32*32
         final=combined_img.reshape(1,len_image_array).astype(float)
 
         result.append(__model.predict(final)[0])
