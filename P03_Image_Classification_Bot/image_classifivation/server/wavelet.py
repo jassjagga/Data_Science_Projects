@@ -2,7 +2,6 @@ import numpy as np
 import pywt
 import cv2
 
-
 def w2d(img, mode="haar", level=1):
     imArray = img
     # datatype conversions
